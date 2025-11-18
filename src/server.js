@@ -25,6 +25,8 @@ app.use('/api', protect)
 app.use('/api/user', userRouter)
 app.use('/api/item', itemRouter)
 app.use('/api/list', listRouter)
+app.use('/api/list/1', listRouter)
+app.use('/api/list/2', listRouter)
 
 export const start = async () => {
   try {
