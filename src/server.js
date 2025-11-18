@@ -26,6 +26,10 @@ app.use('/api/user', userRouter)
 app.use('/api/item', itemRouter)
 app.use('/api/list', listRouter)
 
+app.use('/api/user/add', userRouter)
+app.use('/api/user/update', userRouter)
+
+
 export const start = async () => {
   try {
     await connect()
